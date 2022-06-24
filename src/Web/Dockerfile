@@ -13,6 +13,8 @@ WORKDIR /app
 COPY *.sln .
 COPY . .
 WORKDIR /app/src/Web
+USER Administrator
+#RUN icacls "c:\" /grant ${whoami}:F
 RUN dotnet restore
 
 RUN dotnet publish -c Release -o out

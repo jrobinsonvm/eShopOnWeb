@@ -15,7 +15,9 @@
       "Microsoft": "Warning",
       "System": "Warning"
     },
-   "UseOnlyInMemoryDatabase": true,
+  {
+     "UseOnlyInMemoryDatabase": true
+  },
     "AllowedHosts": "*"
   }
 }
